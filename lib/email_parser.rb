@@ -7,10 +7,7 @@ class EmailParser
   
   def parse 
     list = nil
-    list = @emails.split(/)
-
-
-
-
-
+    list = @emails.split(/\b\W?\s\b/)
+    list
+  end
 end
