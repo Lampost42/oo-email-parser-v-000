@@ -7,7 +7,7 @@ class EmailParser
   
   def parse 
     list = nil
-    list = @emails.split(/\b\W?\s\b/)
+    @emails.split(/\b\W?\s\b/).each {|email| list << email if list.
     list
   end
 end
